@@ -21,10 +21,10 @@ public:
 	FText QuestDescription = FText();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	FGameplayTagContainer RequestedQuest = FGameplayTagContainer();
+	FGameplayTagContainer RequiredMainQuest = FGameplayTagContainer();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	TMap<FGameplayTag, int> DialogueEndTime = TMap<FGameplayTag, int>();
+	TMap<FGameplayTag, int> RequiredCompletionDetails = TMap<FGameplayTag, int>();
 };
 
 
